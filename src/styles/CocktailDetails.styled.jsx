@@ -11,11 +11,9 @@ export const CTDetailsContainer = styled.div`
   margin-bottom: 20px;
 
   @media (max-width: 768px) {
-    width: 350px;
+    width: 360px;
     gap: 20px;
     flex-wrap: wrap;
-    margin-left:20px;
-    margin-right:20px;
   }
 `;
 
@@ -113,10 +111,9 @@ export const IngredientsContainer = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    width: 350px;
+    width: 360px;
     flex-wrap: wrap;
-    margin-left:20px;
-    margin-right:20px;
+    
   }
 `;
 
