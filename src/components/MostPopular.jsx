@@ -7,7 +7,7 @@ import { BackToFlavors } from "../styles/CocktailDetails.styled";
 export const MostPopular = () => {
 const {data, isFetching} = useGetPopularCocktailQuery();
 const popularCocktails = data?.drinks;
-console.log(popularCocktails);
+
 
 
     return(

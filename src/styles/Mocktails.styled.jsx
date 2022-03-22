@@ -20,6 +20,11 @@ export const MocktailNav = styled.div`
   justify-content: space-between;
   margin: 100px 0 20px 0;
 
+  input{
+    background:rgb(0,0,47);
+    border: 2px solid white;
+  }
+
   a {
     font-size:1.7rem;
     text-transform: uppercase;
@@ -29,7 +34,7 @@ export const MocktailNav = styled.div`
     cursor: pointer;
 
     @media (max-width: 768px){
-  font-size:1rem;
+  font-size:0.8rem;
 }
 
     &::after {

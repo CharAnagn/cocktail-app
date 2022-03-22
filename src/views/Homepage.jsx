@@ -55,7 +55,7 @@ export const Homepage = (props) => {
               <Link to="/latest-cocktails">Latest cocktails</Link>
             </li>
           </ul>
-          <input onChange={(e)=>setSearchTerm(e.target.value.toLocaleLowerCase())}/>
+          <input placeholder="Search Cocktail" onChange={(e)=>setSearchTerm(e.target.value.toLocaleLowerCase())}/>
         </MidSectionList>
       </StyledMidSection>
       <hr />

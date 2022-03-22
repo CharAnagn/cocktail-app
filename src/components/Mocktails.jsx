@@ -26,7 +26,7 @@ export const Mocktails = () => {
         <MocktailsStyledSection>
             <MocktailNav>
                     <Link to="/">Back to cocktails</Link>
-                    <input onChange={(e)=>setSearchTerm(e.target.value.toLocaleLowerCase())}/>
+                    <input placeholder="Search Mocktail" onChange={(e)=>setSearchTerm(e.target.value.toLocaleLowerCase())}/>
                    
             </MocktailNav>
             <hr />

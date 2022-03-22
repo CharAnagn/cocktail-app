@@ -5,17 +5,19 @@ export const HomepageContainer = styled.main`
   width: 1200px;
 
   @media (max-width: 768px){
-  width: 380px;
+  width: 360px;
 }
 `;
 
 export const CocktailsSecion = styled.div`
   display: flex;
-  width: 100%;
-  height: 100%;
   gap: 25px;
   flex-wrap: wrap;
   margin-top: 50px;
+
+  @media (max-width: 768px){
+  gap:50px;
+}
 
 
 `;
@@ -41,6 +43,11 @@ export const MidSectionList = styled.ul`
 
 }
 
+input{
+  background:rgb(0,0,47);
+  border:2px solid white;
+}
+
   ul {
     display: flex;
     gap: 20px;
@@ -58,7 +65,7 @@ export const MidSectionList = styled.ul`
         font-size: 1.5rem;
 
         @media (max-width: 768px){
-          font-size:0.8rem;
+          font-size:0.5rem;
           padding: 0px;
           border: 0px;
           

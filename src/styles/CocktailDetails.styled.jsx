@@ -4,20 +4,20 @@ import Logo from "../images/logo.png";
 export const CTDetailsContainer = styled.div`
   display: flex;
   gap: 20px;
-  width: 100%;
   height: 100%;
   margin: 0 auto;
   width: 1200px;
   margin-top: 60px;
   margin-bottom: 20px;
 
-  @media (max-width: 768px){
-  width:390px;
-}
+  @media (max-width: 768px) {
+    width: 370px;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
 `;
 
 export const CTDetailsImgContainer = styled.div`
-  background: rgb(103, 155, 80);
   width: 100%;
   height: 79vh;
   align-items: center;
@@ -26,6 +26,16 @@ export const CTDetailsImgContainer = styled.div`
   img {
     width: 100%;
     height: 79vh;
+
+    @media (max-width: 768px) {
+      height: 50vh;
+      margin: 0 10px 0 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 50vh;
   }
 `;
 
@@ -34,6 +44,12 @@ export const CTDetailsTitleContainer = styled.div`
   flex-direction: column;
   width: 100%;
   gap: 10px;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 70vh;
+    gap: 30px;
+  }
 
   .title {
     display: flex;
@@ -49,6 +65,10 @@ export const CTDetailsTitleContainer = styled.div`
     text-align: center;
     font-size: 60px;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+    }
   }
 
   p {
@@ -71,6 +91,10 @@ export const CTDetailsTitleContainer = styled.div`
       letter-spacing: 5px;
       font-weight: 700;
       text-transform: uppercase;
+
+      @media (max-width: 768px) {
+        font-size: 1.6rem;
+      }
     }
   }
 `;
@@ -81,6 +105,11 @@ export const IngredientsContainer = styled.div`
   width: 1200px;
   height: 100%;
   gap: 20px;
+
+  @media (max-width: 768px) {
+    width: 370px;
+    flex-wrap: wrap;
+  }
 `;
 
 export const Ingredients = styled.div`
@@ -94,11 +123,19 @@ export const Ingredients = styled.div`
   margin-bottom: 20px;
   gap: 50px;
 
+  @media (max-width: 768px){
+  width:100%;
+}
+
   h1 {
     font-size: 2rem;
     text-transform: uppercase;
     margin-top: 50px;
     width: 500px;
+
+    @media (max-width: 768px){
+  font-size:1.5rem;
+}
   }
 
   .portions {
@@ -106,11 +143,19 @@ export const Ingredients = styled.div`
     justify-content: space-between;
     gap: 220px;
 
+    @media (max-width: 768px){
+  gap:10px;
+}
+
     p {
       font-size: 15px;
       margin: 15px 0 0 0;
       text-transform: uppercase;
       font-weight: 700;
+
+      @media (max-width: 768px){
+  font-size:15px;
+}
     }
   }
 `;
@@ -123,6 +168,11 @@ export const Recipe = styled.div`
   background: white;
   gap: 50px;
 
+  @media (max-width: 768px){
+  width:100%;
+
+}
+
   .recipe {
     border: 3px solid rgb(103, 155, 80);
     height: 70vh;
@@ -131,6 +181,11 @@ export const Recipe = styled.div`
     gap: 50px;
     width: 90%;
     margin: 30px 0 0 30px;
+
+    @media (max-width: 768px){
+    height:74vh;
+    margin: 30px 0 0 20px;
+}
 
     h1 {
       font-size: 50px;
@@ -144,6 +199,10 @@ export const Recipe = styled.div`
       font-size: 1.5rem;
       margin: 0 20px 0 20px;
       color: black;
+
+      @media (max-width: 768px){
+  font-size:1.3rem;
+}
     }
   }
 `;
@@ -155,9 +214,10 @@ export const LogoContainer = styled.div`
   height: 35vh;
   margin-bottom: 50px;
 
-  @media (max-width: 768px){
-  width:390px;
-}
+  @media (max-width: 768px) {
+    width: 390px;
+    margin-top:40px;
+  }
 `;
 export const BackToFlavors = styled.div`
   height: 80px;
@@ -166,12 +226,12 @@ export const BackToFlavors = styled.div`
   padding: 0 20px;
   display: flex;
   align-items: center;
-  margin-top:80px;
+  margin-top: 80px;
   border-bottom: 2px solid white;
 
-  @media (max-width: 768px){
-  width:390px;
-}
+  @media (max-width: 768px) {
+    width: 390px;
+  }
 
   a {
     font-size: 1.7rem;
