@@ -31,12 +31,6 @@ export const BackToFlavors = styled.div`
     margin: 0.2rem 0.7rem;
     cursor: pointer;
 
-    @media (max-width: 768px){
-  width: 390px;
-  font-size:1.3rem;
-}
-
-
     &::after {
       content: "";
       display: block;
@@ -51,4 +45,8 @@ export const BackToFlavors = styled.div`
         width: 100%;
       }
     }
+  
+    @media (max-width: 768px){
+      font-size:1.4rem;
+}
   }`

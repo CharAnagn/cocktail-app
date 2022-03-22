@@ -12,7 +12,7 @@ export const CTDetailsContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 360px;
-    gap: 20px;
+    gap: 10;
     flex-wrap: wrap;
   }
 `;
@@ -48,7 +48,7 @@ export const CTDetailsTitleContainer = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     height: 70vh;
-    gap: 30px;
+    gap: 20px;
   }
 
   .title {
@@ -75,6 +75,11 @@ export const CTDetailsTitleContainer = styled.div`
     font-size: 30px;
     font-weight: 700;
     text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 1.2rem;
+    }
+    
   }
 
   .info {
@@ -108,7 +113,7 @@ export const IngredientsContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 360px;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
   }
 `;
 
@@ -125,6 +130,7 @@ export const Ingredients = styled.div`
 
   @media (max-width: 768px){
   width:100%;
+  
 }
 
   h1 {
@@ -135,6 +141,7 @@ export const Ingredients = styled.div`
 
     @media (max-width: 768px){
   font-size:1.5rem;
+  width:200px;
 }
   }
 

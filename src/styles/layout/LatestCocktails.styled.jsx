@@ -1,25 +1,25 @@
 import styled from "styled-components";
 
 export const LatestCocktailsSection = styled.div`
-width:1200px;
-margin: 0 auto;
-margin-top:80px;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 80px;
 
-@media (max-width: 768px){
-  width:380px;
-}
-`
+  @media (max-width: 768px) {
+    width: 380px;
+  }
+`;
 export const LatestCocktailsContainer = styled.div`
-display:flex;
-gap:50px;
-flex-wrap:wrap;
-margin-top:50px;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-top: 50px;
 
-@media (max-width: 768px){
-  gap:20px;
-  margin-top:30px;
-}
-`
+  @media (max-width: 768px) {
+    gap: 20px;
+    margin-top: 30px;
+  }
+`;
 
 export const BackToFlavors = styled.div`
   height: 80px;
@@ -30,9 +30,9 @@ export const BackToFlavors = styled.div`
   align-items: center;
   border-bottom: 2px solid white;
 
-  @media (max-width: 768px){
-  width: 390px;
-}
+  @media (max-width: 768px) {
+    width: 370px;
+  }
 
   a {
     font-size: 1.7rem;
@@ -42,9 +42,10 @@ export const BackToFlavors = styled.div`
     margin: 0.2rem 0.7rem;
     cursor: pointer;
 
-    @media (max-width: 768px){
-  font-size:1.2rem;
-}
+    @media (max-width: 768px) {
+      font-size: 1.4rem;
+      
+    }
 
     &::after {
       content: "";
@@ -60,4 +61,5 @@ export const BackToFlavors = styled.div`
         width: 100%;
       }
     }
-  }`
+  }
+`;
