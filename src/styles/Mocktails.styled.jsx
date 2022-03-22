@@ -23,6 +23,7 @@ export const MocktailNav = styled.div`
   input{
     background:rgb(0,0,47);
     border: 2px solid white;
+    color:white;
   }
 
   a {

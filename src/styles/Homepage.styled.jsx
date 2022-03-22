@@ -46,6 +46,7 @@ export const MidSectionList = styled.ul`
 input{
   background:rgb(0,0,47);
   border:2px solid white;
+  color:white;
 }
 
   ul {
