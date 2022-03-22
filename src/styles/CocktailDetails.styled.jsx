@@ -11,7 +11,7 @@ export const CTDetailsContainer = styled.div`
   margin-bottom: 20px;
 
   @media (max-width: 768px) {
-    width: 370px;
+    width: 360px;
     gap: 20px;
     flex-wrap: wrap;
   }
@@ -107,7 +107,7 @@ export const IngredientsContainer = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    width: 370px;
+    width: 360px;
     flex-wrap: wrap;
   }
 `;
@@ -215,7 +215,7 @@ export const LogoContainer = styled.div`
   margin-bottom: 50px;
 
   @media (max-width: 768px) {
-    width: 390px;
+    width: 360px;
     margin-top:40px;
   }
 `;
@@ -223,14 +223,13 @@ export const BackToFlavors = styled.div`
   height: 80px;
   margin: 0 auto;
   width: 1200px;
-  padding: 0 20px;
   display: flex;
   align-items: center;
   margin-top: 80px;
   border-bottom: 2px solid white;
 
   @media (max-width: 768px) {
-    width: 390px;
+    width: 360px;
   }
 
   a {

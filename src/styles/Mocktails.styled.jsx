@@ -5,7 +5,7 @@ export const MocktailsStyledSection = styled.div`
   margin: 0 auto;
 
   @media (max-width: 768px){
-  width: 400px;
+  width: 360px;
 }
 `;
 export const MocktailsCardContainer = styled.div`
