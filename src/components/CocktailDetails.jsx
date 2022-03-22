@@ -10,13 +10,14 @@ import {
   LogoContainer,
   Recipe,
 } from "../styles/CocktailDetails.styled";
+import { Loader } from "./Loader";
 
 export const CocktailDetails = () => {
   const { idDrink } = useParams();
   const { data, isFetching } = useGetCocktailDetailsQuery(idDrink);
   const cocktail = data?.drinks;
 
-  if (isFetching) return "Loading...";
+  if (isFetching) return <Loader />;
 
   const portions = [
     {

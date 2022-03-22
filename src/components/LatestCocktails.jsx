@@ -2,13 +2,14 @@ import { Link } from "react-router-dom";
 import { useGetLatestCocktailQuery } from "../services/cocktailApi"
 import { BackToFlavors, LatestCocktailsContainer, LatestCocktailsSection } from "../styles/layout/LatestCocktails.styled"
 import { CocktailCard } from "./CocktailCard";
+import { Loader } from "./Loader";
 
 
 export const LatestCocktails = () => {
 const {data, isFetching} = useGetLatestCocktailQuery();
 const latestCocktails = data?.drinks;
 
-if(isFetching) return "Loading...";
+if(isFetching) return <Loader />;
 
 
     return (

@@ -3,11 +3,13 @@ import { Link } from "react-router-dom";
 import { useGetPopularCocktailQuery } from "../services/cocktailApi"
 import {CocktailCard} from "./CocktailCard";
 import { BackToFlavors } from "../styles/CocktailDetails.styled";
+import { Loader } from "./Loader";
 
 export const MostPopular = () => {
 const {data, isFetching} = useGetPopularCocktailQuery();
 const popularCocktails = data?.drinks;
 
+if(isFetching) return <Loader />;
 
 
     return(

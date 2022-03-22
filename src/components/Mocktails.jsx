@@ -3,12 +3,15 @@ import { Link } from "react-router-dom";
 import { useGetMocktailsQuery } from "../services/cocktailApi"
 import { MocktailNav, MocktailsCardContainer, MocktailsStyledSection } from "../styles/Mocktails.styled";
 import { CocktailCard } from "./CocktailCard"
+import { Loader } from "./Loader";
 
 export const Mocktails = () => {
     
   const {data : mocktailsList, isFetching} = useGetMocktailsQuery();
   const [mocktails, setMocktails] = useState();
   const [searchTerm, setSearchTerm] = useState('');
+
+  
 
   useEffect(()=> {
       setMocktails(mocktailsList?.drinks);
@@ -18,7 +21,7 @@ export const Mocktails = () => {
       setMocktails(filteredMocktails);
   }, [mocktailsList,searchTerm])
 
-  if(isFetching) return "Loading..."
+  if(isFetching) return <Loader />;
 
 
     return (
