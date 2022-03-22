@@ -1,0 +1,44 @@
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import { useGetMocktailsQuery } from "../services/cocktailApi"
+import { MocktailNav, MocktailsCardContainer, MocktailsStyledSection } from "../styles/Mocktails.styled";
+import { CocktailCard } from "./CocktailCard"
+
+export const Mocktails = () => {
+    
+  const {data : mocktailsList, isFetching} = useGetMocktailsQuery();
+  const [mocktails, setMocktails] = useState();
+  const [searchTerm, setSearchTerm] = useState('');
+
+  useEffect(()=> {
+      setMocktails(mocktailsList?.drinks);
+
+      const filteredMocktails = mocktailsList?.drinks.filter((item) => item.strDrink.toLowerCase().includes(searchTerm));
+
+      setMocktails(filteredMocktails);
+  }, [mocktailsList,searchTerm])
+
+  if(isFetching) return "Loading..."
+
+
+    return (
+        <>
+        <MocktailsStyledSection>
+            <MocktailNav>
+                    <Link to="/">Back to cocktails</Link>
+                    <input onChange={(e)=>setSearchTerm(e.target.value.toLocaleLowerCase())}/>
+                   
+            </MocktailNav>
+            <hr />
+            <MocktailsCardContainer>
+        {mocktails && mocktails.map((mocktail) => (
+            <CocktailCard
+            id={mocktail.idDrink}
+            title={mocktail.strDrink}
+            image={mocktail.strDrinkThumb} />
+        ))}
+        </MocktailsCardContainer>
+        </MocktailsStyledSection>
+        </>
+    )
+}
