@@ -11,9 +11,11 @@ export const CTDetailsContainer = styled.div`
   margin-bottom: 20px;
 
   @media (max-width: 768px) {
-    width: 360px;
-    gap: 10;
+    width: 350px;
+    gap: 20px;
     flex-wrap: wrap;
+    margin-left:20px;
+    margin-right:20px;
   }
 `;
 
@@ -79,7 +81,6 @@ export const CTDetailsTitleContainer = styled.div`
     @media (max-width: 768px) {
       font-size: 1.2rem;
     }
-    
   }
 
   .info {
@@ -112,8 +113,10 @@ export const IngredientsContainer = styled.div`
   gap: 20px;
 
   @media (max-width: 768px) {
-    width: 360px;
-    flex-wrap:wrap;
+    width: 350px;
+    flex-wrap: wrap;
+    margin-left:20px;
+    margin-right:20px;
   }
 `;
 
@@ -128,10 +131,9 @@ export const Ingredients = styled.div`
   margin-bottom: 20px;
   gap: 50px;
 
-  @media (max-width: 768px){
-  width:100%;
-  
-}
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   h1 {
     font-size: 2rem;
@@ -139,10 +141,10 @@ export const Ingredients = styled.div`
     margin-top: 50px;
     width: 500px;
 
-    @media (max-width: 768px){
-  font-size:1.5rem;
-  width:200px;
-}
+    @media (max-width: 768px) {
+      font-size: 1.5rem;
+      width: 200px;
+    }
   }
 
   .portions {
@@ -150,9 +152,9 @@ export const Ingredients = styled.div`
     justify-content: space-between;
     gap: 220px;
 
-    @media (max-width: 768px){
-  gap:10px;
-}
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
 
     p {
       font-size: 15px;
@@ -160,9 +162,9 @@ export const Ingredients = styled.div`
       text-transform: uppercase;
       font-weight: 700;
 
-      @media (max-width: 768px){
-  font-size:15px;
-}
+      @media (max-width: 768px) {
+        font-size: 14px;
+      }
     }
   }
 `;
@@ -175,10 +177,9 @@ export const Recipe = styled.div`
   background: white;
   gap: 50px;
 
-  @media (max-width: 768px){
-  width:100%;
-
-}
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 
   .recipe {
     border: 3px solid rgb(103, 155, 80);
@@ -189,10 +190,10 @@ export const Recipe = styled.div`
     width: 90%;
     margin: 30px 0 0 30px;
 
-    @media (max-width: 768px){
-    height:74vh;
-    margin: 30px 0 0 20px;
-}
+    @media (max-width: 768px) {
+      height: 74vh;
+      margin: 30px 0 0 20px;
+    }
 
     h1 {
       font-size: 50px;
@@ -207,9 +208,9 @@ export const Recipe = styled.div`
       margin: 0 20px 0 20px;
       color: black;
 
-      @media (max-width: 768px){
-  font-size:1.3rem;
-}
+      @media (max-width: 768px) {
+        font-size: 1.3rem;
+      }
     }
   }
 `;
@@ -223,7 +224,7 @@ export const LogoContainer = styled.div`
 
   @media (max-width: 768px) {
     width: 360px;
-    margin-top:40px;
+    margin-top: 40px;
   }
 `;
 export const BackToFlavors = styled.div`
